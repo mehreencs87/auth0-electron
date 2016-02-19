@@ -12,9 +12,11 @@
 
     <script src="https://cdn.auth0.com/js/lock-8.2.min.js"></script>
     <script src="auth0-electron.js"></script>
+    <script src="auth0-variables.js"></script>
+    
     <script>
       
-      var lock = new Auth0Lock('AUTH0_CLIENT_ID', 'AUTH0_DOMAIN');
+      var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN);
 
       document.getElementById('login').addEventListener('click', function() {
         lock.show(function(err, profile, token) {
