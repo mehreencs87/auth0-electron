@@ -19,9 +19,15 @@ Set `AUTH0_CLIENT_ID` and `AUTH0_DOMAIN` in the `Auth0Lock` instance to your own
 
 ...
 
-var lock = new Auth0Lock('AUTH0_CLIENT_ID', 'AUTH0_DOMAIN');
+var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN);
 
 ...
+```
+
+You will also need to configure your **Allowed Callback URLs** in your Auth0 dashboard. Set the following values there:
+
+```
+https://{your-auth0-domain-name}.auth0.com/mobile, file:///
 ```
 
 ## Run the App
