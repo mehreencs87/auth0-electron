@@ -7,7 +7,7 @@ window.electron = {};
 Auth0Lock._setOpenWindowFn(function(url, name, options) {
   let listeners = [];
 
-  const win = new BrowserWindow({show: false});
+  const win = new BrowserWindow({show: false, webPreferences: { nodeIntegration: false }});
   win.loadURL(url);
   win.show();
 
