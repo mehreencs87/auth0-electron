@@ -12,16 +12,13 @@ npm install
 
 ## Set Your Credentials
 
-Set `AUTH0_CLIENT_ID` and `AUTH0_DOMAIN` in the `Auth0Lock` instance to your own.
+Create `auth0-variables.js` and set `AUTH0_CLIENT_ID` and `AUTH0_DOMAIN`:
 
 ```js
 // index.html
 
-...
-
-var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN);
-
-...
+var AUTH0_CLIENT_ID = 'AUTH0_CLIENT_ID';
+var AUTH0_DOMAIN = 'AUTH0_DOMAIN';
 ```
 
 You will also need to configure your **Allowed Callback URLs** in your Auth0 dashboard. Set the following values there:

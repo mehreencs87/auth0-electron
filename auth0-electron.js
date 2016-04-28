@@ -46,7 +46,7 @@ Auth0Lock._setOpenWindowFn(function(url, name, options) {
             || "Error when navigating to " + validatedURL;
 
           f({message: message});
-        }
+        };
 
         listeners.push({
           event: "loaderror",
