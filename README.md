@@ -15,8 +15,6 @@ npm install
 Create `auth0-variables.js` and set `AUTH0_CLIENT_ID` and `AUTH0_DOMAIN`:
 
 ```js
-// index.html
-
 var AUTH0_CLIENT_ID = 'AUTH0_CLIENT_ID';
 var AUTH0_DOMAIN = 'AUTH0_DOMAIN';
 ```
